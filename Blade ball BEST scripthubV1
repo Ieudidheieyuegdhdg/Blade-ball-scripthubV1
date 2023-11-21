@@ -1,0 +1,30 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("BLADE BALL (SCRIPT HUBV1)", "GrapeTheme")
+local Tab = Window:NewTab("MAIN")
+local Section = Tab:NewSection("auto parry : owner @coldster")
+Section:NewButton("auto parry (no gui) : owner @coldster", "ButtonInfo", function()
+getgenv().config = getgenv().config or {
+	hit_time = 0.5, -- // recommended 0.25 to 0.75 \\ --
+	
+	mode = 'Always', -- // Hold , Toggle , Always \\ --
+	deflect_type = 'Remote', -- // Key Press , Remote \\ --
+	notifications = true,
+	keybind = Enum.KeyCode.V
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
+    print("Clicked")
+end)
+
+local Section = Tab:NewSection("REDz hub : owner @redz999999")
+Section:NewButton("REDz hub", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BladeBall/main/eng"))()
+    print("Clicked")
+end)
+
+local Section = Tab:NewSection("BLADE BEST SCRIPT")
+Section:NewButton("blade ball best script gui : owner @freepastebin (by me)", "ButtonInfo", function()
+    print("Clicked")
+end)
+
+local Section = Tab:NewSection("subscribe for more (@freepastebin)")
